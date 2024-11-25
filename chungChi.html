@@ -1,0 +1,133 @@
+<!-- Khai báo bắt đầu tài liệu HTML -->
+<html>
+<head>
+    <!-- Đặt tiêu đề trang -->
+    <title>Chứng Chỉ</title>
+    
+    <!-- Nhúng TailwindCSS từ CDN để dễ dàng sử dụng các lớp CSS tiện lợi -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Nhúng Font Awesome để sử dụng biểu tượng -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100"> <!-- Đặt nền màu xám nhạt cho toàn bộ trang -->
+
+    <!-- Thanh điều hướng -->
+    <nav class="bg-black text-white p-4 flex justify-between items-center">
+        <!-- Phần chứa logo và các liên kết điều hướng -->
+        <div class="flex items-center space-x-4">
+            <!-- Logo của trang web -->
+            <a href="TrangChu.html" class="text-xl font-bold">DP Programming</a>
+            
+            <!-- Các liên kết điều hướng -->
+            <div class="space-x-4">
+                <a href="luyenTap.html" class="text-green-500">Luyện Tập</a> <!-- Đường dẫn đến trang "Luyện Tập" -->
+                <a href="chungChi.html" class="text-green-500">Chứng Chỉ</a> <!-- Đường dẫn đến trang "Chứng Chỉ" -->
+                <a href="thiDau.html" class="text-green-500">Thi Đấu</a> <!-- Đường dẫn đến trang "Thi Đấu" -->
+            </div>
+        </div>
+
+        <!-- Phần bên phải của thanh điều hướng -->
+        <div class="flex items-center space-x-4">
+            <!-- Ô nhập tìm kiếm -->
+            <input type="text" placeholder="Tìm kiếm" class="p-2 rounded">
+            
+            <!-- Liên kết đến trang đăng nhập -->
+            <a href="dangNhapDangKi.html" class="text-green-500">Đăng nhập</a>
+            <!-- Nút đăng ký với màu xanh -->
+            <a href="dangNhapDangKi.html" class="bg-green-500 text-white px-4 py-2 rounded">Đăng ký</a>
+        </div>
+    </nav>
+
+    <!-- Phần tiêu đề và mô tả -->
+    <header class="bg-gradient-to-r from-blue-800 to-blue-500 text-white p-8">
+        <div class="text-left">
+            <h1 class="text-3xl font-bold">Chứng Chỉ</h1> <!-- Tiêu đề chính -->
+            
+            <!-- Bố cục hiển thị 3 cột mô tả -->
+            <div class="flex justify-center space-x-8 mt-4">
+                <!-- Cột 1: Nổi bật giữa đám đông -->
+                <div class="text-center">
+                    <h2 class="text-xl font-semibold">Nổi bật giữa đám đông</h2>
+                    <p>Thể hiện kỹ năng kỹ thuật của bạn bằng cách tham gia bài kiểm tra chứng nhận của DP Programming.</p>
+                </div>
+                <!-- Cột 2: Đánh giá tiêu chuẩn -->
+                <div class="text-center">
+                    <h2 class="text-xl font-semibold">Đánh giá tiêu chuẩn</h2>
+                    <p>DP Programming cung cấp bài kiểm tra chứng nhận tiêu chuẩn, và những người đạt chứng nhận sẽ nhận được chứng chỉ DP Programming 2024.</p>
+                </div>
+                <!-- Cột 3: Nâng cao hồ sơ -->
+                <div class="text-center">
+                    <h2 class="text-xl font-semibold">Nâng cao hồ sơ của bạn</h2>
+                    <p>Chứng nhận của DP Programming nâng cao hồ sơ của bạn, bạn có thể quảng bá bản thân bằng cách sử dụng chứng chỉ DP Programming trong các chiến dịch khác nhau.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Phần chứng nhận vai trò -->
+    <main class="p-8">
+        <!-- Tiêu đề phần "Chứng nhận vai trò" -->
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold">Chứng Nhận Vai Trò Của Bạn</h2>
+        </div>
+
+        <!-- Lưới hiển thị các vai trò chứng nhận -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Ô 1: Chứng nhận Frontend -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">Lập trình viên Frontend (Cơ bản)</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+            <!-- Ô 2: Chứng nhận kỹ sư phần mềm -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">Kỹ sư phần mềm</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+            <!-- Ô 3: Chứng nhận thực tập sinh -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">Thực tập sinh kỹ sư phần mềm</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+        </div>
+
+        <!-- Tiêu đề phần chứng nhận kỹ năng -->
+        <div class="text-center mt-16 mb-8">
+            <h2 class="text-2xl font-bold">Chứng Nhận Kỹ Năng Của Bạn</h2>
+        </div>
+
+        <!-- Lưới hiển thị các kỹ năng chứng nhận -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Ô 1: Angular cơ bản -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">Angular (Cơ bản)</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+            <!-- Ô 2: Angular trung cấp -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">Angular (Trung cấp)</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+            <!-- Ô 3: C# cơ bản -->
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-semibold">C# (Cơ bản)</h3>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Nhận Chứng Nhận</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer chứa các liên kết thông tin -->
+    <footer class="bg-gray-200 text-center p-4 mt-8">
+        <div class="text-sm text-gray-600">
+            <!-- Các liên kết điều hướng footer -->
+            <a href="#" class="mr-4">Trợ giúp</a>
+            <a href="#" class="mr-4">Điều khoản</a>
+            <a href="#" class="mr-4">Chính sách</a>
+            <a href="#" class="mr-4">Liên hệ</a>
+            <a href="#" class="mr-4">Hỗ trợ</a>
+            <a href="#" class="mr-4">Nghề nghiệp</a>
+            <a href="#" class="mr-4">Blog</a>
+        </div>
+    </footer>
+</body>
+</html>

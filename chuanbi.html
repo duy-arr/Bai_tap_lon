@@ -1,0 +1,74 @@
+```html
+<html lang="vi"> <!-- Tạo một tài liệu HTML với ngôn ngữ mặc định là tiếng Việt -->
+<head>
+    <meta charset="UTF-8"> <!-- Định dạng ký tự của trang là UTF-8, đảm bảo hiển thị đúng các ký tự tiếng Việt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giúp trang hiển thị responsive trên mọi thiết bị -->
+    <title>Chuẩn bị</title> <!-- Tiêu đề của trang web -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Kết nối thư viện Tailwind CSS từ CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Kết nối Font Awesome để sử dụng biểu tượng -->
+</head>
+<body class="bg-gray-100"> <!-- Thiết lập màu nền cho trang là xám nhạt -->
+    <!-- Navbar -->
+    <nav class="bg-black text-white p-4 flex justify-between items-center"> <!-- Thanh điều hướng với nền đen, chữ trắng, khoảng cách padding là 4 -->
+        <div class="flex items-center space-x-4"> <!-- Căn chỉnh logo và menu trái, khoảng cách giữa các mục là 4 -->
+            <div class="text-2xl font-bold"><a href="TrangChu.html">DP programming</a></div> <!-- Logo chính, kích thước chữ lớn và đậm -->
+            <div class="flex space-x-4"> <!-- Các liên kết đến các phần khác -->
+                <a href="luyenTap.html" class="hover:underline">Chuẩn bị</a> <!-- Link đến trang Chuẩn bị -->
+                <a href="chungChi.html" class="hover:underline">Chứng Chỉ</a> <!-- Link đến trang Chứng Chỉ -->
+                <a href="thiDau.html" class="hover:underline">Thi đấu</a> <!-- Link đến trang Thi đấu -->
+            </div>
+        </div>
+        <div class="flex items-center space-x-4"> <!-- Căn chỉnh các nút bên phải -->
+            <a href="dangNhapDangKi.html" class="hover:underline">Cần hỗ trợ?</a> <!-- Link trợ giúp -->
+            <button class="bg-white text-black px-4 py-2 rounded"><a href="dangNhapDangKi.html">Đăng nhập</a></button> <!-- Nút đăng nhập -->
+            <button class="bg-green-500 text-white px-4 py-2 rounded"><a href="dangNhapDangKi.html">Đăng ký</a></button> <!-- Nút đăng ký -->
+        </div>
+    </nav>
+    
+    <div class="max-w-7xl mx-auto p-4"> <!-- Phần chính với chiều rộng tối đa và căn giữa -->
+        <h1 class="text-3xl font-bold mb-4">Lộ Trình Chuẩn Bị Phỏng Vấn</h1> <!-- Tiêu đề lớn của trang -->
+        <section class="bg-blue-500 text-white p-6 rounded-lg mb-6"> <!-- Phần giới thiệu với nền xanh dương và chữ trắng -->
+            <h2 class="text-xl font-bold">Chuẩn bị cho buổi phỏng vấn của bạn</h2> <!-- Tiêu đề phụ -->
+            <p>Các chuyên gia của chúng tôi đã tạo ra các lộ trình này với các thử thách từ các công ty hàng đầu và các bài kiểm tra mô phỏng để tự đánh giá. Đây là giải pháp một cửa của bạn cho mọi thứ bạn cần để trau dồi kỹ năng và vượt qua buổi phỏng vấn của mình.</p> <!-- Nội dung giới thiệu -->
+        </section>
+
+        <h2 class="text-2xl font-bold mb-4">Lộ trình DP Programming</h2> <!-- Tiêu đề phần lộ trình -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <!-- Grid hiển thị danh sách lộ trình, chuyển đổi cột linh hoạt -->
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow relative"> <!-- Thẻ hiển thị nội dung với nền trắng, góc bo tròn, đổ bóng -->
+                <h3 class="text-xl font-bold mb-2">Lộ trình Chuẩn Bị 1 Tuần</h3> <!-- Tiêu đề thẻ -->
+                <p class="text-gray-600 mb-4">Thử thách: 21, Lượt thử: 980928, Bài kiểm tra mô phỏng: 0</p> <!-- Mô tả lộ trình -->
+                <div class="flex space-x-2"> <!-- Các nút chức năng bên trong thẻ -->
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Cơ bản)</button> <!-- Nút cơ bản -->
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Trung cấp)</button> <!-- Nút trung cấp -->
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">+1</button> <!-- Nút thêm -->
+                </div>
+                <div class="absolute bottom-4 right-4 text-gray-200 text-4xl">1W</div> <!-- Ký hiệu thời gian của lộ trình -->
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow relative">
+                <h3 class="text-xl font-bold mb-2">Lộ trình Chuẩn Bị 1 Tháng</h3> <!-- Thẻ tương tự Card 1, thời gian khác -->
+                <p class="text-gray-600 mb-4">Thử thách: 54, Lượt thử: 460544, Bài kiểm tra mô phỏng: 0</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Cơ bản)</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Trung cấp)</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">+1</button>
+                </div>
+                <div class="absolute bottom-4 right-4 text-gray-200 text-4xl">1M</div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow relative">
+                <h3 class="text-xl font-bold mb-2">Lộ trình Chuẩn Bị 3 Tháng</h3> <!-- Thẻ cho lộ trình dài hơn -->
+                <p class="text-gray-600 mb-4">Thử thách: 104, Lượt thử: 356259, Bài kiểm tra mô phỏng: 0</p>
+                <div class="flex space-x-2">
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Cơ bản)</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Giải quyết vấn đề (Trung cấp)</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">+1</button>
+                </div>
+                <div class="absolute bottom-4 right-4 text-gray-200 text-4xl">3M</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+```

@@ -1,0 +1,144 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .theme-light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .theme-dark {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .theme-blue {
+            background-color: #003366;
+            color: #ffffff;
+        }
+        textarea {
+            width: 100%;
+            height: 12rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <div class="flex flex-col min-h-screen items-center">
+        <!-- Header -->
+        <header class="bg-gray-900 p-4 flex justify-between items-center w-full max-w-6xl">
+            <div class="text-xl font-bold">HackerRank</div>
+            <div class="flex items-center space-x-4">
+                <div class="text-sm">Còn 10 điểm nữa để đạt sao tiếp theo!</div>
+                <div class="text-sm">Hạng: 262721 | Điểm: 140/150</div>
+                <div class="relative">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex flex-col lg:flex-row w-full max-w-6xl">
+            <!-- Left Section -->
+            <div class="bg-gray-900 p-4 lg:w-2/3">
+                <div class="text-sm text-gray-400 mb-2">Chuẩn bị &gt; C++ &gt; Giới thiệu &gt; Nói "Hello, World!" Với C++</div>
+                <h1 class="text-2xl font-bold mb-4">Nói "Hello, World!" Với C++</h1>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="text-xl font-bold mb-2">Mục tiêu</h2>
+                    <p class="mb-2">Đây là một thử thách đơn giản để giúp bạn thực hành in ra stdout. Bạn cũng có thể muốn hoàn thành <a href="#" class="text-blue-500">Giải quyết cho tôi</a> trong C++ trước khi thử thách này.</p>
+                    <p class="mb-2">Chúng ta bắt đầu bằng cách in ra cụm từ nổi tiếng nhất trong lĩnh vực máy tính! Trong trình soạn thảo bên dưới, sử dụng printf hoặc cout để in chuỗi <code class="bg-gray-700 p-1 rounded">Hello, World!</code> ra stdout.</p>
+                    <p class="mb-2">Lệnh phổ biến hơn là <code class="bg-gray-700 p-1 rounded">cout &lt;&lt; value_to_print &lt;&lt; value_to_print;</code></p>
+                    <p class="mb-2">Bất kỳ số lượng giá trị nào cũng có thể được in bằng một lệnh như đã chỉ ra.</p>
+                    <p class="mb-2">Lệnh <code class="bg-gray-700 p-1 rounded">printf</code> đến từ ngôn ngữ C. Nó chấp nhận một định dạng tùy chọn và một danh sách các biến. Hai ví dụ để in một chuỗi là:</p>
+                    <p class="mb-2"><code class="bg-gray-700 p-1 rounded">printf("%s", string);</code> <code class="bg-gray-700 p-1 rounded">printf(string);</code></p>
+                    <p class="mb-2">Lưu ý rằng không phương pháp nào thêm một dòng mới. Nó chỉ in những gì bạn nói với nó.</p>
+                    <h2 class="text-xl font-bold mb-2">Định dạng đầu ra</h2>
+                    <p class="mb-2">In <code class="bg-gray-700 p-1 rounded">Hello, World!</code> ra stdout.</p>
+                    <h2 class="text-xl font-bold mb-2">Đầu ra mẫu</h2>
+                    <p class="bg-gray-700 p-2 rounded">Hello, World!</p>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="bg-gray-900 p-4 lg:w-1/3">
+                <div class="text-sm text-gray-400 mb-2">Tác giả</div>
+                <div class="text-lg font-bold mb-4">abhiranjan</div>
+                <div class="text-sm text-gray-400 mb-2">Độ khó</div>
+                <div class="text-lg font-bold mb-4">Dễ</div>
+                <div class="text-sm text-gray-400 mb-2">Điểm tối đa</div>
+                <div class="text-lg font-bold mb-4">5</div>
+                <div class="text-sm text-gray-400 mb-2">Đã nộp bởi</div>
+                <div class="text-lg font-bold mb-4">1409521</div>
+                <div class="text-sm text-gray-400 mb-2">CẦN GIÚP ĐỠ?</div>
+                <div class="flex flex-col space-y-2 mb-4">
+                    <a href="#" class="text-blue-500">Xem thảo luận</a>
+                    <a href="#" class="text-blue-500">Xem biên tập</a>
+                    <a href="#" class="text-blue-500">Xem các bài nộp hàng đầu</a>
+                </div>
+                <div class="text-sm text-gray-400 mb-2">ĐÁNH GIÁ THỬ THÁCH NÀY</div>
+                <div class="flex space-x-1 mb-4">
+                    <i class="fas fa-star text-yellow-500"></i>
+                    <i class="fas fa-star text-yellow-500"></i>
+                    <i class="fas fa-star text-yellow-500"></i>
+                    <i class="fas fa-star text-yellow-500"></i>
+                    <i class="fas fa-star text-yellow-500"></i>
+                </div>
+                <div class="text-sm text-gray-400 mb-2">THÊM CHI TIẾT</div>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="text-blue-500">Tải xuống tuyên bố vấn đề</a>
+                    <a href="#" class="text-blue-500">Tải xuống các trường hợp kiểm tra mẫu</a>
+                    <a href="#" class="text-blue-500">Đề xuất chỉnh sửa</a>
+                </div>
+                <div class="flex space-x-2 mt-4">
+                    <a href="#" class="text-blue-500"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-blue-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-blue-500"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Code Editor -->
+        <div class="bg-gray-900 p-4 w-full max-w-6xl">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="text-sm text-gray-400">Thay đổi chủ đề</div>
+                    <div class="text-sm text-gray-400">Ngôn ngữ:</div>
+                    <select class="bg-gray-700 text-white p-2 rounded">
+                        <option value="cpp">C++</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                    <select id="theme-selector" class="bg-gray-700 text-white p-2 rounded">
+                        <option value="theme-light">Chủ đề: Sáng</option>
+                        <option value="theme-dark">Chủ đề: Đen</option>
+                        <option value="theme-blue">Chủ đề: Xanh dương</option>
+                    </select>
+                </div>
+                <textarea class="bg-white p-4 rounded-lg text-black w-full h-48 theme-light" placeholder="#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+using namespace std;
+
+int main() {
+    printf(&quot;Hello, World!&quot;);
+    return 0;
+}"></textarea>
+                <div class="flex justify-end mt-2">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('theme-selector').addEventListener('change', function() {
+            const textarea = document.querySelector('textarea');
+            textarea.className = this.value;
+        });
+    </script>
+</body>
+</html>

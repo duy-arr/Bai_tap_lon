@@ -1,0 +1,88 @@
+<html lang="vi">
+<!-- Đây là thẻ bắt đầu tài liệu HTML. Thuộc tính `lang="vi"` chỉ định ngôn ngữ của trang là tiếng Việt -->
+ <head>
+  <!-- Định dạng ký tự là UTF-8 -->
+  <meta charset="utf-8"/>
+  <!-- Giúp trang web hiển thị tốt trên mọi thiết bị bằng cách thiết lập viewport -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- Đặt tiêu đề cho trang web -->
+  <title>Cuộc Thi</title>
+  <!-- Nhúng thư viện Tailwind CSS từ CDN để sử dụng các lớp CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Nhúng thư viện biểu tượng Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Thiết lập màu nền của trang là xám nhạt bằng TailwindCSS -->
+  <!-- Bắt đầu phần thanh điều hướng -->
+  <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
+   <!-- Thanh điều hướng có màu nền xám đậm, chữ trắng, thêm khoảng cách padding 4 -->
+   <!-- Phần logo và các liên kết -->
+   <div class="flex items-center space-x-4">
+    <!-- Sắp xếp các phần tử trong một dòng, khoảng cách giữa các phần tử là 4 -->
+    <span class="text-lg font-bold">
+     <!-- Logo dẫn đến trang chủ -->
+     <a href="TrangChu.html">DP programing</a> 
+    </span>
+    <!-- Các liên kết dẫn đến các trang khác -->
+    <a class="hover:underline" href="chuanbi.html">Chuẩn Bị</a>
+    <a class="hover:underline" href="luyenTap.html">Luyện Tập</a>
+    <a class="hover:underline" href="chungChi.html">Chứng Chỉ</a>
+    <a class="hover:underline" href="thiDau.html">Thi Đấu</a>
+    <!-- Khi rê chuột, các liên kết sẽ được gạch chân (underline) -->
+   </div>
+   <!-- Phần nút bấm ở bên phải -->
+   <div class="flex items-center space-x-4">
+    <!-- Nút Quản Lý Cuộc Thi có màu nền xanh lá -->
+    <button class="bg-green-500 text-white px-4 py-2 rounded">Quản Lý Cuộc Thi</button>
+    <!-- Nút Tạo Cuộc Thi -->
+    <button class="bg-green-500 text-white px-4 py-2 rounded">Tạo Cuộc Thi</button>
+    <!-- Nút Đăng Nhập / Đăng Ký -->
+    <a class="bg-green-500 text-white px-4 py-2 rounded" href="dangNhapDangKi.html">Đăng Nhập / Đăng Ký</a>
+   </div>
+  </nav>
+
+  <!-- Phần nội dung chính -->
+  <div class="container mx-auto p-8">
+   <!-- Đặt khoảng cách padding 8 và canh giữa nội dung -->
+   <!-- Tiêu đề của trang -->
+   <h1 class="text-3xl font-bold mb-4">Cuộc Thi</h1>
+   <!-- Tiêu đề lớn, chữ đậm, cách lề dưới 4 -->
+
+   <!-- Phần hiển thị cuộc thi nổi bật -->
+   <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+    <!-- Nền trắng, bo góc lớn, có hiệu ứng đổ bóng, cách lề dưới 8 -->
+    <div class="flex justify-between items-center">
+     <!-- Chia đôi không gian: thông tin và nút -->
+     <div>
+      <!-- Logo cuộc thi -->
+      <img alt="Logo Salesforce" class="inline-block mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Fp6eMgS4wL0WC6LDeIINb2zSd13voQDwmvLK0opZzKoIDZtTA.jpg" width="50"/>
+      <!-- Thêm logo kích thước 50x50 -->
+      <h2 class="text-xl font-bold">Thử Thách Kỹ Sư Cao Cấp: Masters of Code</h2>
+      <!-- Tiêu đề cuộc thi -->
+      <p class="text-gray-600">
+       Tham gia Masters of Code - một sự kiện trực tuyến dành cho các kỹ sư cao cấp để thể hiện khả năng giải quyết các vấn đề phức tạp, thiết kế các giải pháp mở rộng và tối ưu hóa hiệu suất.
+      </p>
+      <!-- Mô tả cuộc thi -->
+     </div>
+     <!-- Phần nút đăng ký -->
+     <div class="text-right">
+      <!-- Đặt nút ở góc phải -->
+      <button class="bg-green-500 text-white px-4 py-2 rounded mb-2">Đăng Ký Ngay</button>
+      <p class="text-gray-600">Đăng ký mở đến ngày 9 tháng 11</p>
+     </div>
+    </div>
+   </div>
+   <!-- Tương tự tiếp với các phần: Cuộc Thi Đang Diễn Ra, Cuộc Thi Sắp Tới, Cuộc Thi Đã Kết Thúc -->
+  </div>
+
+  <!-- Phần chân trang -->
+  <footer class="bg-gray-100 text-center py-4">
+   <!-- Nền xám nhạt, chữ canh giữa -->
+   <p class="text-gray-600">
+    Blog | Điểm Số | Môi Trường | FAQ | Về Chúng Tôi | Hỗ Trợ | Nghề Nghiệp | Điều Khoản Dịch Vụ | Chính Sách Bảo Mật
+   </p>
+   <!-- Các liên kết trong footer -->
+  </footer>
+ </body>
+</html>

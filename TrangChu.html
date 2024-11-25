@@ -1,0 +1,220 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Trang chủ
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .modal {
+            display: none;
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            animation: fadeIn 0.5s;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <nav class="bg-gray-800 text-white p-4 flex justify-between items-center">
+   <div class="flex items-center space-x-4">
+    <div class="text-xl font-bold">
+     <a href="TrangChu.html">
+      DP programming
+     </a>
+    </div>
+    <div class="space-x-4">
+     <a class="hover:underline" href="luyenTap.html">
+      Luyện tập
+     </a>
+     <a class="hover:underline" href="chungChi.html">
+      Chứng chỉ
+     </a>
+     <a class="hover:underline" href="thiDau.html">
+      Thi đấu
+     </a>
+    </div>
+   </div>
+   <div class="space-x-4">
+    <a class="hover:underline" href="dangNhapDangKi.html">
+     Cần hỗ trợ?
+    </a>
+    <a class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105" href="dangNhapDangKi.html">
+     Đăng nhập
+    </a>
+    <a class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105" href="dangNhapDangKi.html">
+     Đăng ký
+    </a>
+   </div>
+  </nav>
+  <section class="bg-gray-800 text-white text-center py-20">
+   <h1 class="text-4xl font-bold mb-4">
+    Nâng cao kỹ năng lập trình của bạn
+   </h1>
+   <p class="mb-6">
+    Tham gia cộng đồng lập trình viên lớn nhất thế giới và cải thiện kỹ năng của bạn với các thử thách và bài kiểm tra.
+   </p>
+   <a class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105" href="dangNhapDangKi.html">
+    Bắt đầu ngay
+   </a>
+  </section>
+  <section class="py-16">
+   <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">
+     Tại sao chọn DP programming?
+    </h2>
+   </div>
+   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <i class="fas fa-code text-blue-500 text-4xl mb-4 transition duration-300 ease-in-out transform hover:rotate-12">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Thử thách lập trình
+     </h3>
+     <p>
+      Tham gia các thử thách lập trình từ cơ bản đến nâng cao để cải thiện kỹ năng của bạn.
+     </p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <i class="fas fa-trophy text-blue-500 text-4xl mb-4 transition duration-300 ease-in-out transform hover:rotate-12">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Thi đấu
+     </h3>
+     <p>
+      Tham gia các cuộc thi lập trình và so tài với các lập trình viên khác trên toàn thế giới.
+     </p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <i class="fas fa-briefcase text-blue-500 text-4xl mb-4 transition duration-300 ease-in-out transform hover:rotate-12">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Cơ hội việc làm
+     </h3>
+     <p>
+      Kết nối với các nhà tuyển dụng hàng đầu và tìm kiếm cơ hội việc làm phù hợp với kỹ năng của bạn.
+     </p>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-gray-800">
+   <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">
+     Nhà sáng lập
+    </h2>
+   </div>
+   <div class="max-w-6xl mx-auto text-center">
+    <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105" id="founderBtn">
+     Xem thông tin
+    </button>
+   </div>
+  </section>
+  <div class="modal" id="founderModal">
+   <div class="modal-content">
+    <span class="close">
+     ×
+    </span>
+    <div class="text-center">
+     <img alt="Ảnh của nhà sáng lập" class="mx-auto mb-4 rounded-full" height="150" src="nsl.jpg" width="150"/>
+     <h3 class="text-xl font-bold mb-2">
+      Do hai sinh viên ngành Khoa Học Máy Tính là: Nguyễn Xong Phi và Lê Quốc Duy tạo ra vào cuối năm 2024
+     </h3>
+     <p>
+      Phi và Duy hiện vẫn đang là sinh viên năm nhất.
+     </p>
+    </div>
+   </div>
+  </div>
+  <section class="py-16">
+   <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold">
+     Tin tức mới nhất
+    </h2>
+   </div>
+   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <img alt="Hình ảnh mô tả tin tức 1" class="w-full h-48 object-cover mb-4 rounded transition duration-300 ease-in-out transform hover:scale-110" height="200" src="logoc++.png" width="300"/>
+     <h3 class="text-xl font-bold mb-2">
+      Học C++ sao cho hiệu quả?
+     </h3>
+     <p>
+      Theo thống kê mới nhất từ đại học Đại Nam số sinh viên trượt môn C++ lên tới con số đáng báo động. Sau đây là 5 bí kíp học tốt C++...xem thêm.
+     </p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <img alt="Hình ảnh mô tả tin tức 2" class="w-full h-48 object-cover mb-4 rounded transition duration-300 ease-in-out transform hover:scale-110" height="200" src="tk.jpg" width="300"/>
+     <h3 class="text-xl font-bold mb-2">
+      Tìm kiếm nhị phân là gì?
+     </h3>
+     <p>
+      Tìm kiếm nhị phân là một trong những thuật toán thường được sử dụng trong môn DSA của sinh viên. Vậy làm sao để học hiệu quả...xem thêm.
+     </p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:bg-gray-700">
+     <img alt="Hình ảnh mô tả tin tức 3" class="w-full h-48 object-cover mb-4 rounded transition duration-300 ease-in-out transform hover:scale-110" height="200" src="mt.jpg" width="300"/>
+     <h3 class="text-xl font-bold mb-2">
+      Kém Toán thì có học được CNTT không?
+     </h3>
+     <p>
+      Toán học là một môn học giúp các bạn học sinh rèn luyện khả năng tư duy logic và chúng cũng bổ trợ cho việc học lập trình. Kém Toán có học được lập trình không theo GS...xem thêm.
+     </p>
+    </div>
+   </div>
+  </section>
+  <footer class="bg-gray-800 text-white py-8">
+   <div class="max-w-6xl mx-auto text-center">
+    <p>
+     © 2024 DP programming. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   var modal = document.getElementById("founderModal");
+        var btn = document.getElementById("founderBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+  </script>
+ </body>
+</html>

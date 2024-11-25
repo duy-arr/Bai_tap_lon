@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP Programming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-underline-animation {
+            position: relative;
+            color: white;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .hover-bg-animation {
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-bg-animation:hover {
+            background-color: #4CAF50;
+        }
+
+        .button-animation {
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-animation:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.5s ease;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .button-animation:hover:after {
+            width: 200%;
+            height: 200%;
+        }
+
+        .button-animation:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-lg font-bold mr-8">
+            <a href="TrangChu.html" class="hover-underline-animation">DP programming</a>
+        </div>
+        <nav class="space-x-8">
+            <a href="luyenTap.html" class="hover-underline-animation">Luyện Tập</a>
+            <a href="chungChi.html" class="hover-underline-animation">Chứng Chỉ</a>
+            <a href="thiDau.html" class="hover-underline-animation">Thi Đấu</a>
+        </nav>
+        <div class="space-x-4 ml-8">
+            <a href="dangNhapDangKi.html" class="hover-underline-animation">Đăng nhập</a>
+            <a href="dangNhapDangKi.html" class="bg-green-500 text-white px-4 py-2 rounded button-animation">Đăng ký</a>
+        </div>
+    </header>
+
+    <main class="p-8">
+        <h1 class="text-2xl font-bold mb-6">Học kỹ năng lập trình</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 p-6 rounded shadow hover-bg-animation">
+                <h2 class="text-xl font-bold mb-4">Sự chuẩn bị của bạn</h2>
+                <div class="mb-4">
+                    <h3 class="font-semibold">Bộ chuẩn bị phỏng vấn</h3>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Xem kỹ năng</a>
+                    </button>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Thêm kỹ năng đầu tiên của bạn</h3>
+                    <p class="text-gray-400">
+                        Thêm kỹ năng đầu tiên của bạn để bắt đầu. Bạn luôn có thể thêm nhiều kỹ năng sau này.
+                    </p>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Khám phá kỹ năng</a>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-gray-800 p-6 rounded shadow hover-bg-animation">
+                <h2 class="text-xl font-bold mb-4">Chứng nhận</h2>
+                <div class="mb-4">
+                    <h3 class="font-semibold">Giải quyết vấn đề (Cơ bản)</h3>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Nhận chứng nhận</a>
+                    </button>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold">Python (Cơ bản)</h3>
+                    <button class="bg-gray-700 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Nhận chứng nhận</a>
+                    </button>
+                </div>
+                <div class="bg-black text-white p-4 rounded">
+                    <h3 class="font-semibold">Nổi bật giữa đám đông</h3>
+                    <p class="text-gray-400">
+                        Tham gia bài kiểm tra chứng nhận DP programming và làm cho hồ sơ của bạn nổi bật.
+                    </p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Xem tất cả chứng nhận</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow mt-8 hover-bg-animation">
+            <h2 class="text-xl font-bold mb-4">Chuẩn bị theo chủ đề</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-code"></i> Thuật toán</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html">C</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-database"></i> Cơ sở dữ liệu</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-code"></i> Regex</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-database"></i> Cấu trúc dữ liệu</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html">C++</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-database"></i> SQL</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-calculator"></i> Toán học</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html">Java</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-code"></i> Lập trình hàm</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-brain"></i> Trí tuệ nhân tạo</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html">Ruby</a></h3></div>
+                <div><h3 class="font-semibold"><a href="baitap.html"><i class="fas fa-terminal"></i> Linux Shell</a></h3></div>
+            </div>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow mt-8 hover-bg-animation">
+            <h2 class="text-xl font-bold mb-4">Bài tập liên quan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-semibold"><a href="baitap.html">Bài tập 1: Giải thuật sắp xếp</a></h3>
+                    <p class="text-gray-400">Học cách sắp xếp các phần tử trong một mảng bằng các thuật toán khác nhau.</p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Bắt đầu</a>
+                    </button>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-semibold"><a href="baitap.html">Bài tập 2: Cấu trúc dữ liệu</a></h3>
+                    <p class="text-gray-400">Tìm hiểu về các cấu trúc dữ liệu cơ bản như ngăn xếp, hàng đợi và danh sách liên kết.</p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Bắt đầu</a>
+                    </button>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-semibold"><a href="baitap.html">Bài tập 3: Lập trình hàm</a></h3>
+                    <p class="text-gray-400">Khám phá các khái niệm cơ bản của lập trình hàm và cách áp dụng chúng.</p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Bắt đầu</a>
+                    </button>
+                </div>
+                <div class="bg-gray-700 p-4 rounded">
+                    <h3 class="font-semibold"><a href="baitap.html">Bài tập 4: Trí tuệ nhân tạo</a></h3>
+                    <p class="text-gray-400">Tìm hiểu về các thuật toán cơ bản trong trí tuệ nhân tạo và cách chúng hoạt động.</p>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded mt-2 button-animation">
+                        <a href="baitap.html">Bắt đầu</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 p-4 mt-8">
+        <div class="flex justify-center space-x-8">
+            <a href="blog.html" class="hover-underline-animation">Blog</a>
+            <a href="diemSo.html" class="hover-underline-animation">Điểm số</a>
+            <a href="moiTruong.html" class="hover-underline-animation">Môi trường</a>
+            <a href="faq.html" class="hover-underline-animation">FAQ</a>
+            <a href="veChungToi.html" class="hover-underline-animation">Về chúng tôi</a>
+            <a href="hoTro.html" class="hover-underline-animation">Hỗ trợ</a>
+            <a href="ngheNghiep.html" class="hover-underline-animation">Nghề nghiệp</a>
+            <a href="dieuKhoan.html" class="hover-underline-animation">Điều khoản</a>
+            <a href="chinhSachBaoMat.html" class="hover-underline-animation">Chính sách bảo mật</a>
+        </div>
+    </footer>
+</body>
+
+</html>
